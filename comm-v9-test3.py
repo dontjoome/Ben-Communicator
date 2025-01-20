@@ -1156,7 +1156,7 @@ class KeyboardFrame(tk.Frame):
         self.spacebar_pressed = False
         self.scanning_thread = None
         self.backward_loop_started = False  # Track backward loop state
-    
+
         self.tts_engine = pyttsx3.init()  # Initialize TTS engine
 
         self.row_titles = [
@@ -1217,9 +1217,9 @@ class KeyboardFrame(tk.Frame):
 
     def unbind_keys(self):
         """Unbind keys specific to KeyboardFrame."""
-        self.unbind("<KeyPress-space>")
-        self.unbind("<KeyRelease-space>")
-        self.unbind("<KeyRelease-Return>")
+        self.unbind_all("<KeyPress-space>")
+        self.unbind_all("<KeyRelease-space>")
+        self.unbind_all("<KeyRelease-Return>")
         print("Keys unbound for KeyboardFrame")
 
     def start_scanning(self, event):
@@ -1362,7 +1362,7 @@ class KeyboardFrame(tk.Frame):
         """Handle the action for a button press."""
         if char == "Back":
             self.unload()
-            self.parent.show_frame(CommunicationPageMenu)
+            self.navigate_back_callback()
         elif char == "Play":
             self.read_text_tts()
         elif char == "Space":
