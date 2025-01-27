@@ -8,6 +8,7 @@ This project is designed to enhance accessibility for individuals with specific 
 3. Include a menu for common phrases for easier communication.
 4. Track and update the URLs of shows Ben watches dynamically, ensuring seamless continuation from the last episode.
 5. Offer emergency, settings, communication, and entertainment functions.
+6. Added the keyboard.py to open in the Communication Menu (opens and then closes Comm-v8 - when closing keyboard, it will reopen Comm-v8 provided it's in the same directory)
 
 ## Features
 - **Emergency Function**: Triggers an alert for immediate assistance.
