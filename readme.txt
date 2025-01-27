@@ -37,7 +37,7 @@ This project is designed to enhance accessibility for individuals with specific 
 ## Installation
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/ben-accessibility-software.git
+   git clone https://github.com/acroz3n/ben-s-software-.git
    ```
 2. Navigate to the project directory:
    ```bash
